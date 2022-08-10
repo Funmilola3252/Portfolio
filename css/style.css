@@ -1,0 +1,80 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  margin: 2rem;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, white, pink);
+  /* margin-top: 3rem; */
+}
+
+html {
+  font-size: 1.5rem;
+  /* border: 0.1rem solid rgb(23, 23, 90);
+  margin: 10rem; */
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-weight: 500;
+  color: rgb(102, 102, 102);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+  padding: 0 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  /* color: rgb(212, 38, 38);
+  text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green; */
+}
+
+.container {
+  display: flex;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.profile_pic {
+  border-bottom-left-radius: 50%;
+  height: 45vh;
+  width: 45vh;
+  border: 0.15rem solid #000;
+  box-shadow: 0.8rem -1rem;
+  margin-right: 2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.butt1 {
+  padding: 0.2rem 0.8rem;
+  background-color: #fff;
+  color: #000;
+  font-weight: bolder;
+  margin-right: 0.4rem;
+}
+
+.butt2 {
+  padding: 0.2rem 0.8rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: bolder;
+}
