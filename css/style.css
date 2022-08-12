@@ -12,11 +12,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   background-image: #fff;
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1200 - 300))); */
 }
 
 h1 {
-  font-size: 6.7rem;
-  line-height: 1;
+  font-size: clamp(1.8rem, 6vw, 5.7rem);
+  line-height: 1.2;
 }
 
 p {
@@ -43,10 +44,14 @@ a {
   text-decoration: none;
   color: #000;
   display: inline-block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   font-size: 1.9rem;
   /* color: rgb(212, 38, 38);
   text-shadow: -1px 0 green, 0 1px green, 1px 0 green, 0 -1px green; */
+}
+
+.nowrap {
+  white-space: nowrap;
 }
 
 .container {
@@ -58,7 +63,7 @@ a {
 .content {
   display: flex;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 7rem;
   gap: 5rem;
   /* align-items: center; */
 }
@@ -66,7 +71,7 @@ a {
 .content-flex {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .profile_pic {
@@ -81,18 +86,43 @@ a {
 
 .butt1,
 .butt2 {
-  padding: 0.6rem 1.2rem;
-  font-weight: bolder;
-  font-size: 2.4rem;
+  padding: 0.8rem 1.4rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 .butt1 {
   background-color: #fff;
   color: #000;
-  margin-right: 0.8rem;
+  margin-right: 1rem;
 }
 
 .butt2 {
   background-color: #000;
   color: #fff;
 }
+
+@media (max-width: 750px) {
+  .content {
+    flex-direction: column;
+  }
+  .image {
+    order: 0;
+  }
+  .content-flex {
+    order: 1;
+  }
+  .profile_pic {
+    border-bottom-left-radius: 0;
+  }
+
+  main {
+    margin-bottom: 6rem;
+  }
+}
+
+/* @media (max-width: 1000px) {
+h1 {
+    font-size: px;
+  }
+} */
